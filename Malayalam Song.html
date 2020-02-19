@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<script src="main.js"> </script>
+<script src="jquery-3.4.1.js"></script>
+<script src="jquery-3.4.1.min.js"></script>
+
+<script src="https://connect.soundcloud.com/sdk.js"></script>
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.b2 {display: block;
+     float: left;
+     width: 20%;
+     margin-bottom: 10px;
+     padding: 5px;}
+
+     .btn {
+
+       background-color: DodgerBlue;
+       border: none;
+       color: white;
+       padding: 10px 10px;
+       cursor: pointer;
+       font-size: 10px;
+     }
+
+     /* Darker background on mouse-over */
+     .btn:hover {
+       background-color: RoyalBlue;
+     }
+
+
+     marquee{
+           font-size: 30px;
+           font-weight: 800;
+           color:red;
+           font-family: sans-serif;
+     }
+
+</style>
+</head>
+<body style="background-color:#7bada1">
+
+
+<center> <h2> నా మ్యూజిక్ ప్లేయర్ నాన్బాకు స్వాగతం! </h2> </center>
+<marquee> <p> Malayalam  Music Zone </p> </marquee>
+
+<div class="row">
+
+
+  <div class="column">
+    <div class="card">
+    <p>  <img id="b1" src="images/Malare-ninne.jpg" alt="Malare Ninne Kanathirunnal" width="250px" height="300px"/> </p>
+    <button style="background-color:blue" id="start15" class="b2" type="button"  name="button" > Play </button>
+    <button style="background-color:green" id="stop15" class="b2"  type="button"  name="button" > Stop </button>
+    <button class="btn"><i class="fa fa-download"></i>   Download </a> </button>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+    <p>  <img id="b1" src="images/Chinna Chinna.jpg" alt="Chinna Chinna - Premam" width="250px" height="300px"/> </p>
+    <button style="background-color:blue" id="start16" class="b2" type="button"  name="button" > Play </button>
+    <button style="background-color:green" id="stop16" class="b2"  type="button"  name="button" > Stop </button>
+    <button class="btn"><i class="fa fa-download"></i>   Download </a> </button>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+    <p>  <img id="b1" src="images/Rockaankuthu.jpg" alt="Rockaankuthu" width="250px" height="300px"/> </p>
+    <button style="background-color:blue" id="start17" class="b2" type="button"  name="button" > Play </button>
+    <button style="background-color:green" id="stop17" class="b2"  type="button"  name="button" > Stop </button>
+    <button class="btn"><i class="fa fa-download"></i>   Download </a> </button>
+  </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+    <p>  <img id="b1" src="images/kali.jpg" alt="kali "  width="250px" height="300px"/> </p>
+    <button style="background-color:blue" id="start18" class="b2" type="button"  name="button" > Play </button>
+    <button style="background-color:green" id="stop18" class="b2"  type="button"  name="button" > Stop </button>
+    <button class="btn"><i class="fa fa-download"></i>   Download </a> </button>
+  </div><br> <br><br> <br>
+</div>
+
+
+<div class="column">
+  <div class="card">
+  <p>  <img id="b1" src="images/Vaanam Thilathilakkanu - CIA.jpg" alt="Vaanam Thilathilakkanu - CIA"  width="250px" height="300px"/> </p>
+  <button style="background-color:blue" id="start19" class="b2" type="button"  name="button" > Play </button>
+  <button style="background-color:green" id="stop19" class="b2"  type="button"  name="button" > Stop </button>
+  <button class="btn"><i class="fa fa-download"></i>   Download </a> </button>
+  </div>
+</div>
+
+<div class="column">
+  <div class="card">
+  <p>  <img id="b1" src="images/sai1.jpg" alt="Vaarthinkalee " width="250px" height="300px"/> </p>
+  <button style="background-color:blue" id="start12" class="b2" type="button"  name="button" > Play </button>
+  <button style="background-color:green" id="stop12" class="b2"  type="button"  name="button" > Stop </button>
+  <button class="btn"><i class="fa fa-download"></i>   Download </a> </button>
+  </div>
+</div>
+
+<div class="column">
+  <div class="card">
+  <p>  <img id="b1" src="images/Solo.jpg" alt="Solo "  width="250px" height="300px"/> </p>
+  <button style="background-color:blue" id="start20" class="b2" type="button"  name="button" > Play </button>
+  <button style="background-color:green" id="stop20" class="b2"  type="button"  name="button" > Stop </button>
+  <button class="btn"><i class="fa fa-download"></i>   Download </a> </button>
+</div>
+</div>
+
+<div class="column">
+  <div class="card">
+  <p>  <img id="b1" src="images/Pavizha Mazhaye.jpg" alt="Pavizha Mazhaye " width="250px" height="300px"/> </p>
+  <button style="background-color:blue" id="start21" class="b2" type="button"  name="button" > Play </button>
+  <button style="background-color:green" id="stop21" class="b2"  type="button"  name="button" > Stop </button>
+  <button class="btn"><i class="fa fa-download"></i>   Download </a> </button>
+</div>
+</div> <br> <br>
+
+
+
+</div>
+
+</body>
+</html>

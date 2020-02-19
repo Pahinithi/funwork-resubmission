@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="main.js"> </script>
+<script src="jquery-3.4.1.js"></script>
+<script src="jquery-3.4.1.min.js"></script>
+
+<script src="https://connect.soundcloud.com/sdk.js"></script>
+
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.b2 {display: block;
+     float: left;
+     width: 20%;
+     margin-bottom: 10px;
+     padding: 5px;}
+
+     .btn {
+
+       background-color: DodgerBlue;
+       border: none;
+       color: white;
+       padding: 10px 10px;
+       cursor: pointer;
+       font-size: 10px;
+     }
+
+     /* Darker background on mouse-over */
+     .btn:hover {
+       background-color: RoyalBlue;
+     }
+
+     marquee{
+           font-size: 30px;
+           font-weight: 800;
+           color:red;
+           font-family: sans-serif;
+}
+
+</style>
+</head>
+<body style="background-color:#7bada1">
+
+<center> <h2>Welcome To My Music Player Nanba!  </h2>  </center>
+
+<marquee> Tamil Music Zone </marquee> <br>
+
+
+<div class="row">
+
+
+  <div class="column">
+    <div class="card">
+    <p>  <img id="b1" src="images/bigil 1.jpg" alt="verithanam Songs" width="250px" height="300px"/> </p>
+    <button style="background-color:blue" id="start0" class="b2" type="button"  name="button" > Play </button>
+    <button style="background-color:green" id="stop0" class="b2"  type="button"  name="button" > Stop </button>
+    <button class="btn"><i class="fa fa-download"></i>   Download </a> </button>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+    <p>  <img id="b1" src="images/munbe-vaa.jpg" alt="munbe-vaa Songs" width="250px" height="300px"/> </p>
+    <button style="background-color:blue" id="start1" class="b2" type="button"  name="button" > Play </button>
+    <button style="background-color:green" id="stop1" class="b2"  type="button"  name="button" > Stop </button>
+    <button class="btn"><i class="fa fa-download"></i>   Download </a> </button>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+    <p>  <img id="b1" src="images/Usura.jpg" alt="Usure Pogudhey" width="250px" height="300px"/> </p>
+    <button style="background-color:blue" id="start2" class="b2" type="button"  name="button" > Play </button>
+    <button style="background-color:green" id="stop2" class="b2"  type="button"  name="button" > Stop </button>
+    <button class="btn"><i class="fa fa-download"></i>   Download </a> </button>
+  </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+    <p>  <img id="b1" src="images/Kadal rojava.jpg" alt="Kadal rojava" width="250px" height="300px"/> </p>
+    <button style="background-color:blue" id="start3" class="b2" type="button"  name="button" > Play </button>
+    <button style="background-color:green" id="stop3" class="b2"  type="button"  name="button" > Stop </button>
+    <button class="btn"><i class="fa fa-download"></i>   Download </a> </button>
+  </div><br> <br><br> <br>
+</div>
+
+
+<div class="column">
+  <div class="card">
+  <p>  <img id="b1" src="images/Kanave Kanave.jpg" alt="Kanave Kanave "  width="250px" height="300px"/> </p>
+  <button style="background-color:blue" id="start4" class="b2" type="button"  name="button" > Play </button>
+  <button style="background-color:green" id="stop4" class="b2"  type="button"  name="button" > Stop </button>
+  <button class="btn"><i class="fa fa-download"></i>   Download </a> </button>
+  </div>
+</div>
+
+<div class="column">
+  <div class="card">
+  <p>  <img id="b1" src="images/Devathai.jpg" alt="Devathai " width="250px" height="300px"/> </p>
+  <button style="background-color:blue" id="start5" class="b2" type="button"  name="button" > Play </button>
+  <button style="background-color:green" id="stop5" class="b2"  type="button"  name="button" > Stop </button>
+  <button class="btn"><i class="fa fa-download"></i>   Download </a> </button>
+  </div>
+</div>
+
+<div class="column">
+  <div class="card">
+  <p>  <img id="b1" src="images/maxresdefault.jpg" alt="Azhage "  width="250px" height="300px"/> </p>
+  <button style="background-color:blue" id="start6" class="b2" type="button"  name="button" > Play </button>
+  <button style="background-color:green" id="stop6" class="b2"  type="button"  name="button" > Stop </button>
+  <button class="btn"><i class="fa fa-download"></i>   Download </a> </button>
+</div>
+</div>
+
+<div class="column">
+  <div class="card">
+  <p>  <img id="b1" src="images/Guru.jpg" alt="Guru.jpg" width="250px" height="300px"/> </p>
+  <button style="background-color:blue" id="start31" class="b2" type="button"  name="button" > Play </button>
+  <button style="background-color:green" id="stop31" class="b2"  type="button"  name="button" > Stop </button>
+  <button class="btn"><i class="fa fa-download"></i>   Download </a> </button>
+</div>
+</div> <br> <br>
+
+
+
+</div>
+
+</body>
+</html>
